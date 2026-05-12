@@ -28,5 +28,12 @@ El sistema permite el registro y administración de dos perfiles principales:
 * **Panel de Control:** * Gestión de citas (Ver disponibilidad, reprogramar o cancelar).
     * Acceso a historial médico personal.
 
+###     Footer
+* **Crear links de navegacion dependiendo de cuales son las cosas que se quedarán, queda sujeto a de 
+    decisión del equipo**
+
+###     Generación del formulario para el registro de un paciente
+
+*   **Revisar con el equipo**
 ##  Instalación y Configuración
 *(Aqui colocaremos lo que se vaya agregando al repositorio)*
