@@ -1,0 +1,28 @@
+*{
+    margin-top:0;
+    padding:0;
+    box-sizing: border-box;
+}
+header{
+    background-color:#fff;
+    padding:30px 40px;
+    display:flex;
+    align-content:center;
+    justify-content:space-between;
+    font-size:40px;
+}
+header h1{
+    font-size:40px;
+}
+header ul{
+    display:flex;
+    list-style: none;
+    gap:30px;
+    font-size:22px;
+}
+.Acerca{
+    font-size:30px;
+}
+body{
+    background-color:lightblue;
+}
