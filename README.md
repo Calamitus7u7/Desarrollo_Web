@@ -36,4 +36,9 @@ El sistema permite el registro y administración de dos perfiles principales:
 
 *   **Revisar con el equipo**
 ##  Instalación y Configuración
-*(Aqui colocaremos lo que se vaya agregando al repositorio)*
+
+* **Hacer uso de npm install pg dotenv, de ser necesario ir a Inicio, realizar la busqueda powershell, 
+    dar clic derecho y seleccionar ejecutar como administrador, la ruta mostrada terminara con system32.
+    posteriormente colocar esta linea de comando "Set-ExecutionPolicy RemoteSigned -Scope CurrentUser"
+    Una vez realizado esto se le preguntara si acepta o no, pulsar "s" o "y" en caso de continuar con 
+    la modificación, en cso de que no solo seleccione "n" y enter, esta opción de negarse esta por defecto.**
