@@ -37,11 +37,21 @@ header ul {
     font-size:20px;
 }
 
-.Directorio{
+.medicos{
     padding:50px;
     font-size:20px;
 }
+.form-item {
+    display: flex;          
+    justify-content: center; 
+    margin-top: 20px;       
+}
 
+.form-select {
+    width: 300px;           
+    padding: 10px;          
+    border-radius: 8px;     
+}
 .Hospitales{
     padding:50px;
     font-size:20px;
