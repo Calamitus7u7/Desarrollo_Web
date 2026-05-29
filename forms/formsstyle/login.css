@@ -1,0 +1,119 @@
+/* =========================================
+   Contenedor Principal (Centrado de pantalla)
+   ========================================= */
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-color: #f4f7fa;
+    padding: 20px;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* =========================================
+   Tarjeta del Formulario
+   ========================================= */
+.login-form {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 420px; 
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 50, 100, 0.1); 
+    border-top: 6px solid #0263c9; 
+}
+
+.login-form h2 {
+    color: #0f4c81; /* Azul profundo */
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* =========================================
+   Campos del Formulario
+   ========================================= */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 0.95rem;
+    color: #4a5568;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    padding: 12px 15px;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #2d3748;
+    background-color: #f8fafc;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #0263c9;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(2, 99, 201, 0.2);
+}
+
+/* =========================================
+   Botón de Entrada
+   ========================================= */
+.btn-login {
+    width: 100%;
+    background-color: #0263c9;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    margin-top: 10px;
+}
+
+.btn-login:hover {
+    background-color: #014a99;
+}
+
+.btn-login:active {
+    transform: scale(0.98);
+}
+
+/* =========================================
+   Pie del Formulario (Enlaces)
+   ========================================= */
+.form-footer {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #4a5568;
+}
+
+.form-footer a {
+    color: #0263c9;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.form-footer a:hover {
+    color: #014a99;
+    text-decoration: underline;
+}
+
+.form-footer p {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #edf2f7; /* Línea divisoria sutil */
+}

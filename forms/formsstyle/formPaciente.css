@@ -1,0 +1,122 @@
+/* =========================================
+   Estilos Base y Reseteo
+   ========================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    
+    background-color: #f0f4f8; 
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* =========================================
+   Contenedor Principal (La Tarjeta)
+   ========================================= */
+.contenedor-registro {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 550px; /* Tamaño ideal para formularios */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 50, 100, 0.1); /* Sombra azulada elegante */
+    border-top: 6px solid #0263c9; /* Acento de color institucional */
+}
+
+h2 {
+    color: #0f4c81; /* Azul profundo y confiable */
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* =========================================
+   Estructura del Formulario
+   ========================================= */
+fieldset {
+    border: none;
+    margin-bottom: 25px;
+}
+
+legend {
+    font-size: 1.2rem;
+    color: #0263c9;
+    font-weight: 600;
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e1e8ed;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 0.95rem;
+    color: #4a5568;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+/* =========================================
+   Inputs (Campos de texto)
+   ========================================= */
+input[type="text"],
+input[type="email"] {
+    padding: 12px 15px;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #2d3748;
+    background-color: #f8fafc;
+    transition: all 0.3s ease;
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    outline: none;
+    border-color: #0263c9;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(2, 99, 201, 0.2);
+}
+
+/* =========================================
+   Botón de Acción
+   ========================================= */
+button#guardarRegistro {
+    width: 100%;
+    background-color: #0263c9; /* Azul hospitalario */
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    margin-top: 10px;
+}
+
+
+button#guardarRegistro:hover {
+    background-color: #014a99;
+}
+
+
+button#guardarRegistro:active {
+    transform: scale(0.98);
+}

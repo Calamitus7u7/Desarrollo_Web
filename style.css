@@ -1,85 +1,191 @@
-:root{
-    --colorprimario: #fff;
-    --colorsecundario: lightblue;
-}
-
+/* =========================================
+   1. Reseteo y Tipografía Base
+   ========================================= */
 * {
-    margin: 0; 
-    padding: 0;
     box-sizing: border-box;
-}
-
-header {
-    background-color: var(--colorprimario);
-    padding: 30px 40px;
-    display: flex;
-    align-items: center; 
-    justify-content: space-between;
-}
-
-header h1 {
-    font-size: 30px;
-}
-
-header ul {
-    list-style-type: none;
-    display: flex;
-    gap: 30px;
-    font-size: 18px; 
-}
-
-.Acerca {
-    padding: 50px;
-    font-size: 20px;
-}
-.Estudios{
-    padding: 50px;
-    font-size:20px;
-}
-
-.medicos{
-    padding:50px;
-    font-size:20px;
-}
-.form-item {
-    display: flex;          
-    justify-content: center; 
-    margin-top: 20px;       
-}
-
-.form-select {
-    width: 300px;           
-    padding: 10px;          
-    border-radius: 8px;     
-}
-.Hospitales{
-    padding:50px;
-    font-size:20px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 body {
-    background-color: var(--colorsecundario);
-    font-family: sans-serif; 
+    background-color: #f4f7fa; /* Fondo general muy claro */
+    color: #333;
+    line-height: 1.6;
 }
 
+/* =========================================
+   2. Navegación Principal (Header)
+   ========================================= */
+header {
+    background-color: #0263c9; /* Azul institucional */
+    color: #ffffff;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* Se queda fijo al bajar */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+header ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+header ul li a:hover {
+    opacity: 0.8; /* Efecto sutil al pasar el mouse */
+}
+
+/* Estilo especial tipo "botón" para el Inicio de Sesión */
+header ul li:last-child a {
+    background-color: #ffffff;
+    color: #0263c9;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+header ul li:last-child a:hover {
+    background-color: #e2e8f0;
+    opacity: 1;
+}
+
+/* =========================================
+   3. Contenido Principal (Main y Secciones)
+   ========================================= */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Espacio entre secciones */
+}
+
+section {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 50, 100, 0.05); /* Sombra elegante */
+    border-left: 5px solid #0263c9; /* Detalle visual en el borde izquierdo */
+}
+
+section h2 {
+    color: #0f4c81; /* Azul marino */
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 10px;
+}
+
+section p {
+    color: #4a5568;
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+}
+
+/* =========================================
+   4. Menú Desplegable (Select de Médicos)
+   ========================================= */
+.form-select {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 15px;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #2d3748;
+    background-color: #f8fafc;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-select:focus {
+    border-color: #0263c9;
+    box-shadow: 0 0 0 3px rgba(2, 99, 201, 0.2);
+}
+
+/* =========================================
+   5. Pie de Página (Footer)
+   ========================================= */
 footer {
-    padding: 20px 0; 
-    background-color: var(--colorprimario);
-    margin-top: 50px;
+    background-color: #0f4c81; /* Azul profundo */
+    color: #ffffff;
+    padding: 60px 20px 30px;
+    margin-top: 60px;
 }
 
 .container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start; 
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    /* CSS Grid mágico: Crea columnas adaptables según el espacio */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+footer h5 {
+    color: #90cdf4; /* Azul claro para contrastar */
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+footer ul {
     list-style: none;
 }
 
-.container h5 {
-    font-size: 18px;
-    margin-bottom: 10px;
+footer ul li {
+    color: #e2e8f0;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 
-.container ul {
-    list-style: none; 
+footer ul li:hover {
+    color: #ffffff;
+    transform: translateX(5px); /* Pequeño salto a la derecha al pasar el mouse */
+}
+
+/* =========================================
+   6. Diseño Responsivo (Móviles)
+   ========================================= */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    header ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    section {
+        padding: 25px;
+    }
 }
